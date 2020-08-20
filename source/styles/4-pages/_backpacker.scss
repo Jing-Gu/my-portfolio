@@ -1,0 +1,29 @@
+.design-system {
+  margin-top: 6rem;
+  h2 {
+    margin-left: 50px;
+    margin-bottom: 2rem;
+  }
+  .category-title {
+    color: $clr-primary;
+    padding: 1rem;
+    margin: 2rem auto;
+    text-align: center;
+    border-left: 10px solid $clr-primary;
+    border-right: 10px solid $clr-primary;
+    width: 30%;
+  }
+  .explain {
+    margin: 2rem 50px;
+    span {
+      color: $clr-primary;
+    }
+  }
+}
+
+.ds-bg {
+  @include bg-image("../images/projects/backpacker/ds-bg.jpg");
+  height: 70vh;
+  margin: 0 50px;
+  margin-bottom: 3rem;
+}

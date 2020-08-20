@@ -1,0 +1,99 @@
+.contact {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  .display {
+    position: absolute;
+    top: -120px;
+    left: 0;
+  }
+  .contact-left {
+    background-color: $clr-primary;
+    color: #fff;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .contact-info {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 1rem;
+      a {
+        font-size: 1.5rem;
+        color: #fff;
+        opacity: 0.7;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .contact-right {
+    @include bg-image("../images/profile.jpg", 80% 50%);
+    transition: filter 300ms ease;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+  .btn-go-up {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    background-color: $clr-primary;
+    span {
+      color: #fff;
+      font-size: 2.5rem;
+      transition: color 250ms ease-in;
+    }
+  }
+  .btn-go-up::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: $clr-secondary;
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 250ms ease-in;
+  }
+  .btn-go-up:hover::before {
+    transform: scaleY(1);
+  }
+
+  .btn-go-up:hover span {
+    color: #000;
+  }
+}
+
+.signature {
+  position: relative;
+  .sign {
+    position: absolute;
+    left: 4rem;
+    top: 0;
+    width: 60px;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  img {
+    width: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

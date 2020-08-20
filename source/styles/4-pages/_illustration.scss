@@ -1,0 +1,56 @@
+.main-img {
+  height: 70vh;
+  overflow-y: hidden;
+}
+
+.others-img {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  img {
+    transition: all 250ms ease;
+    &:hover {
+      filter: grayscale(1);
+    }
+  }
+}
+
+.work-form {
+  margin: 4rem 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  .work-form-intro {
+    width: 70%;
+    justify-self: center;
+  }
+}
+
+.minimal-container {
+  margin: 4rem 50px;
+  .minimal-gallery {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 50px;
+    figure {
+      img {
+        filter: grayscale(1);
+        transition: filter 250ms ease-in-out;
+      }
+      figcaption {
+        text-align: center;
+        opacity: 0;
+        transition: opacity 250ms ease-in-out;
+      }
+      &:hover img {
+        filter: grayscale(0);
+      }
+      &:hover figcaption {
+        opacity: 1;
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.news-showcase {
+  width: 90%;
+  margin: 4rem auto;
+  figcaption {
+    text-align: center;
+  }
+}
+
+.showcase-bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+  margin: 4rem auto;
+
+  .dark-mode {
+    @include bg-image("../images/projects/newsfeed/responsive-dark.jpg");
+  }
+  .mobile-friendly {
+    @include bg-image("../images/projects/newsfeed/responsive-mobile.jpg");
+  }
+  .case {
+    margin-top: 0;
+    height: 100%;
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    bottom: -2rem;
+    width: 100%;
+  }
+}

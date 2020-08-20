@@ -1,0 +1,13 @@
+.hero-calc {
+  @include bg-image("../images/projects/calc/mobile.jpg");
+  height: 90vh;
+}
+
+.showcase-calc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.calc-gif {
+  margin: 4rem auto;
+}

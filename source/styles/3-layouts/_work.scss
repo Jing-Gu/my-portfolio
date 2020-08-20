@@ -1,0 +1,131 @@
+#workspace {
+  @include bg-image("../images/decor/work-left.svg", 0% 30%, contain);
+  margin: 0;
+  padding: 8rem 3rem;
+}
+
+.project-banner {
+  width: 60%;
+  margin-left: 40%;
+  height: 6rem;
+  background-color: $clr-secondary;
+  border-radius: 100px 0 0 0;
+  position: relative;
+  .display {
+    position: absolute;
+    right: 1rem;
+    bottom: 20%;
+  }
+}
+
+.project-container {
+  margin-top: 4rem;
+  .project:nth-child(even) {
+    .thumbnail {
+      order: 2;
+      background-color: $clr-secondary;
+    }
+  }
+  .project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 90vh;
+    // border: 1px solid red;
+    margin-top: 4rem;
+    .thumbnail {
+      height: 100%;
+      width: 50%;
+      transform: translateX(50%);
+      background-color: $clr-primary;
+      img {
+        position: absolute;
+        transform: scale(2);
+        top: 40%;
+      }
+      .svg {
+        width: 70%;
+        margin: auto;
+      }
+    }
+    .explanation {
+      //border: 1px solid red;
+      width: 75%;
+      margin: auto;
+      h2 {
+        margin-bottom: 3rem;
+      }
+      p {
+        margin-bottom: 2rem;
+      }
+      .category {
+        border-left: 5px solid $clr-primary;
+        padding-left: 0.5rem;
+      }
+      a {
+        margin-top: 4rem;
+        color: $clr-primary;
+        display: flex;
+        align-items: center;
+        width: 60%;
+        transition: all 250ms ease-in-out;
+        img {
+          display: inline-block;
+          margin-left: 1rem;
+          width: 50px;
+          transition: transform 250ms ease-in-out;
+        }
+        &:hover {
+          opacity: 0.7;
+        }
+        &:hover img {
+          transform: translateX(5px);
+        }
+      }
+    }
+  }
+
+  .work-extra {
+    margin: 8rem 0;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    a {
+      color: #000;
+    }
+
+    .app-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      width: 50%;
+      height: 100%;
+      margin: auto;
+      position: relative;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transition: transform 300ms ease-in-out;
+      }
+      &:hover img {
+        transform: scale(1.2);
+      }
+      .desc {
+        position: absolute;
+        width: 100%;
+        left: 50%;
+        top: 50%;
+      }
+    }
+    .area-green {
+      background-color: $clr-primary;
+    }
+    .area-yellow {
+      background-color: $clr-secondary;
+    }
+  }
+}

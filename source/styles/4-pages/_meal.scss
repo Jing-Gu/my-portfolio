@@ -1,0 +1,14 @@
+.showcase-meal {
+  background-color: #e6e6e6;
+  height: 80vh;
+  display: grid;
+  place-content: center;
+  margin-bottom: 4rem;
+  img {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+}
+
+.showcase-res {
+  margin-bottom: 4rem;
+}

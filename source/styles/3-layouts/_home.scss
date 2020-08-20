@@ -1,0 +1,66 @@
+.home-header {
+  height: 60px;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  right: 50px;
+  z-index: 10;
+  .logo {
+    height: 60px;
+    width: 60px;
+    display: block;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+
+#home {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  //   border: 1px solid red;
+  height: 100vh;
+}
+
+.home-left {
+  .intro {
+    height: 50vh;
+    margin-top: 35vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    .content-text {
+      margin-top: 0;
+      font-size: 2.5rem;
+      line-height: 1.5;
+      position: relative;
+      .my-name {
+        color: $clr-primary;
+      }
+      .my-title {
+        position: relative;
+        display: inline;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -5px;
+          height: 25px;
+          width: 100%;
+          background-color: $clr-secondary;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
+
+.home-right {
+  .intro-img {
+    height: 100%;
+    padding-left: 20%;
+    padding-top: 50px;
+  }
+}

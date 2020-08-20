@@ -1,0 +1,11 @@
+@mixin bg-image(
+  $imgpath,
+  $position: 50% 50%,
+  $size: cover,
+  $repeat: no-repeat
+) {
+  background-image: url($imgpath);
+  background-position: $position;
+  background-size: $size;
+  background-repeat: $repeat;
+}

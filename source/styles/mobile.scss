@@ -1,0 +1,351 @@
+@import "1-helpers/variables";
+@media screen and (max-width: 640px) {
+  section {
+    min-height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  h1 {
+    font-size: 2rem; //32px
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 21px;
+  }
+
+  p,
+  a {
+    font-size: 18px;
+  }
+
+  .display {
+    font-size: 4rem;
+  }
+
+  .home-header {
+    // border: 1px solid red;
+    left: 0;
+    right: 0;
+    top: 0;
+    .logo {
+      height: 40px;
+      width: 40px;
+      margin-left: 20px;
+      margin-top: 30px;
+    }
+
+    .burger-menu {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 10vh 0 15vh 0;
+      width: 100%;
+      height: 100vh;
+      background-color: $clr-primary;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: transform 500ms ease-in-out;
+      z-index: 10;
+      transform: translateX(-100%);
+      a {
+        color: #fff;
+        text-align: center;
+        font-size: 2.5rem;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+    .burger-menu-open {
+      transform: translateX(0);
+    }
+
+    .burger {
+      width: 30px;
+      height: 30px;
+      background: transparent;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+      transition: all 250ms ease-out;
+      z-index: 100;
+      .burger-line {
+        position: relative;
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: black;
+        transition: all 250ms ease-out;
+        &::before,
+        &::after {
+          width: 100%;
+          height: 3px;
+          border-radius: 5px;
+          background-color: black;
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          transition: all 250ms ease-out;
+        }
+        &::before {
+          top: 6px;
+        }
+        &::after {
+          bottom: 6px;
+        }
+      }
+      &:active,
+      &:focus {
+        outline: 0;
+      }
+      .burger-line-twist {
+        transform: rotate(0.625turn);
+        &:before {
+          transform: rotate(90deg) translateX(-6px);
+        }
+        &:after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+#home {
+  .home-left {
+    .intro {
+      .content-text {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .home-right {
+    top: 10%;
+    .intro-img {
+      padding: 20% 10% 0 10%;
+    }
+  }
+}
+
+#workspace {
+  padding: 4rem 0;
+}
+
+.project-banner {
+  width: 70%;
+  margin-left: 30%;
+}
+
+.nav-bar {
+  display: none;
+}
+
+.project-banner {
+  height: 4rem;
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+.project-container {
+  .project:nth-child(even) {
+    .thumbnail {
+      background-color: transparent;
+      order: 1;
+    }
+    .explanation {
+      order: 2;
+    }
+  }
+  .project {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .thumbnail {
+      width: 100%;
+      height: 50%;
+      transform: translateX(0);
+      background-color: transparent;
+      img {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .explanation {
+      width: 100%;
+      height: 50%;
+      margin-top: 1rem;
+      padding: 2rem 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      h2 {
+        margin-bottom: 1rem;
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+      a {
+        margin-top: 1rem;
+        margin-left: 50%;
+      }
+    }
+  }
+  .work-extra {
+    width: 100%;
+    .app-area {
+      img {
+        top: 50%;
+      }
+    }
+  }
+}
+
+.shout-out {
+  .feature-card {
+    width: 100%;
+    .feature-list {
+      padding: 2rem 1rem;
+    }
+  }
+}
+
+.contact {
+  .display {
+    left: 20px;
+    top: -60px;
+  }
+  .contact-right {
+    background-position: 80% 80%;
+  }
+}
+
+//for project page
+
+.project-header {
+  height: 20vh;
+  h1 {
+    margin-left: 0;
+    margin: auto;
+    text-align: center;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 20px 4rem 20px;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+  h3 {
+    margin: 1rem 0;
+  }
+}
+
+.page {
+  figure {
+    height: auto;
+    width: 100%;
+    margin: 2rem 0;
+    padding: 0;
+    background-color: transparent;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.design-system {
+  .ds-bg {
+    height: 50vh;
+    margin: 0 0 3rem 0;
+  }
+  h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+  .category-title {
+    width: 80%;
+    padding: 0.5rem;
+    border-left: 5px solid $clr-primary;
+    border-right: 5px solid $clr-primary;
+  }
+}
+
+.showcase-momento,
+.showcase-ikea {
+  figure {
+    width: 100%;
+    height: auto;
+    margin: 4rem 0;
+    padding: 0;
+    background-color: transparent;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.showcase-meal {
+  height: 50vh;
+}
+
+.showcase-calc {
+  grid-template-columns: 1fr;
+}
+
+.work-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 4rem 20px;
+  .work-form-intro {
+    width: 100%;
+  }
+}
+
+.minimal-container {
+  text-align: center;
+  margin: 4rem 20px;
+}
+
+.showcase-bottom {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  .case {
+    margin-bottom: 4rem;
+  }
+}
+
+.direction {
+  margin: 4rem 20px;
+}
+
+footer {
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  .copyright {
+    order: 2;
+  }
+  .footer-info {
+    width: 70%;
+    margin: auto;
+  }
+}

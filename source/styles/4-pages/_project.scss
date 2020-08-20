@@ -1,0 +1,88 @@
+.project-header {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  p {
+    opacity: 0.5;
+    margin-top: 50px;
+    margin-left: 50px;
+    position: relative;
+  }
+  p::before {
+    position: absolute;
+    left: -50px;
+    top: 10px;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: #000;
+  }
+  h1 {
+    margin-left: 50px;
+  }
+}
+
+.hero {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.intro {
+  margin: 4rem 50px 4rem 50px;
+  display: grid;
+  grid-template-columns: 70% 20%;
+  grid-gap: 10%;
+  h2 {
+    border-bottom: 3px solid $clr-secondary;
+  }
+  span {
+    color: $clr-primary;
+  }
+  .area p {
+    color: $clr-primary;
+  }
+}
+
+.showcase-momento,
+.showcase-ikea {
+  figure {
+    height: 100vh;
+    margin: 4rem 50px;
+    background-color: #e2e2e2;
+    display: grid;
+    place-content: center;
+    img {
+      width: 60%;
+      margin: auto;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    }
+    figcaption {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  }
+}
+
+.direction {
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  .direct-icon {
+    background-color: $clr-primary;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .next-icon,
+  .prev-icon {
+    background-color: transparent;
+  }
+}
