@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jing Gu | Web Developer</title>
+    <link rel="shortcut icon" type="image/gif" href="images/favicon.gif" />
+    <!-- AOS STYLE -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- CUSTOMIZED CSS STYLE -->
+    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- MEDIA QUERY -->
+    <link
+      rel="stylesheet"
+      href="css/pad.min.css"
+      media="screen and (max-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/mobile.min.css"
+      media="screen and (max-width: 640px)"
+    />
+    <!-- AOS SCRIPT -->
+    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- CUSTOMIZED SCRIPT -->
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="home-header">
+      <a href="index.html" class="logo" data-aos="fade-in"
+        ><img src="images/logo.svg" alt=""
+      /></a>
+
+      <nav class="burger-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#project-container" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <div class="social-media">
+          <a href="https://github.com/Jing-Gu?tab=repositories" target="_blank"
+            ><img src="images/media-icons/github.svg" alt=""
+          /></a>
+          <a href="https://dribbble.com/Jing_gu" target="_blank"
+            ><img src="images/media-icons/dribbble.svg" alt=""
+          /></a>
+          <a href="https://codepen.io/jing-gu" target="_blank"
+            ><img src="images/media-icons/codepen.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/jing_u__/" target="_blank"
+            ><img src="images/media-icons/instagram.svg" alt=""
+          /></a>
+        </div>
+      </nav>
+      <button class="burger">
+        <div class="burger-line"></div>
+      </button>
+    </header>
+
+    <!-- SECTION HOME -->
+    <section id="home" class="home">
+      <div class="home-left" data-aos="fade-right" data-aos-delay="50">
+        <div class="intro">
+          <p class="content-text">
+            <span class="my-name">Jing Gu</span> is a
+            <span class="my-title">front-end</span> web designer.
+          </p>
+          <a href="#project-banner" class="cta-btn">View My Work</a>
+        </div>
+      </div>
+
+      <div class="home-right" data-aos="fade-left" data-aos-delay="50">
+        <div class="intro-img">
+          <img src="images/decor/girl.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- sticky nav-bar -->
+    <div class="nav-bar" id="nav-bar">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="#project-container" class="nav-link">Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- SECTION WORKSPACE ILLUS -->
+    <section id="workspace">
+      <img class="svg-workspace" src="images/decor/workspace.svg" alt="" />
+    </section>
+
+    <div class="project-banner" id="project-banner">
+      <p class="display">Projects.</p>
+    </div>
+
+    <!-- SECTION WORK SHOWCASE -->
+    <section class="project-container" id="project-container">
+      <div class="project" data-aos="fade-right">
+        <div class="thumbnail">
+          <img src="images/projects/oasis/home-thumbnail.png" alt="" />
+        </div>
+
+        <div class="explanation">
+          <h2>Salon de thé Oasis</h2>
+          <p class="category bigger">Web design</p>
+          <p>
+            development of a dynamic web & mobile site for a tea salon in
+            Montréal.
+          </p>
+          <a href="pages/oasis.html"
+            >View case study<img src="images/media-icons/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-left">
+        <div class="thumbnail">
+          <img src="images/projects/backpacker/home-thumbnail.png" alt="" />
+        </div>
+
+        <div class="explanation">
+          <h2>Backpacker Mobile App</h2>
+          <p class="category bigger">UIUX design</p>
+          <p>
+            UI design of a mobile travel App & component library
+          </p>
+          <a href="pages/backpacker.html"
+            >View case study<img src="images/media-icons/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-right">
+        <div class="thumbnail">
+          <img src="images/projects/ikea/home-thumbnail.png" alt="" />
+        </div>
+
+        <div class="explanation">
+          <h2>IKEA shopping cart</h2>
+          <p class="category bigger">Front-end development</p>
+          <p>
+            development of an online IKEA shopping cart, integrated with a
+            modern landing page
+          </p>
+          <a href="pages/ikea.html"
+            >View case study<img src="images/media-icons/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="project" data-aos="fade-left">
+        <div class="thumbnail">
+          <img
+            class="svg"
+            src="images/projects/illustration/home-thumbnail.svg"
+            alt=""
+          />
+        </div>
+
+        <div class="explanation">
+          <h2>Recent illustrations</h2>
+          <p class="category bigger">illustration</p>
+          <p>
+            a selection of my recent illustrations and their use in UI elements
+          </p>
+          <a href="pages/illustration.html"
+            >View case study<img src="images/media-icons/arrow.svg" alt="" />
+          </a>
+        </div>
+      </div>
+
+      <div class="work-extra" data-aos="fade-up">
+        <a href="pages/newsfeed.html" class="app-area area-green">
+          <img src="images/media-icons/app-icons/newsfeed.svg" alt="" />
+          <div class="desc">
+            <h3>COVID 19 News Feed</h3>
+            <p>#API</p>
+            <p>#JavaScript</p>
+          </div>
+        </a>
+
+        <a href="pages/meal.html" class="app-area area-yellow">
+          <img src="images/media-icons/app-icons/meal.svg" alt="" />
+          <div class="desc">
+            <h3>Serve My Meal</h3>
+            <p>#API</p>
+            <p>#JavaScript</p>
+          </div>
+        </a>
+
+        <a href="pages/momento.html" class="app-area area-green">
+          <img src="images/media-icons/app-icons/momento.svg" alt="" />
+          <div class="desc">
+            <h3>Momento Desktop</h3>
+            <p>#API</p>
+            <p>#JavaScript</p>
+          </div>
+        </a>
+
+        <a href="pages/calc.html" class="app-area area-yellow">
+          <img src="images/media-icons/app-icons/calc.svg" alt="" />
+          <div class="desc">
+            <h3>Simple Calculator</h3>
+            <p>#UI design</p>
+            <p>#JavaScript</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="shout-out">
+      <div class="feature-card why">
+        <h2>Why working with me</h2>
+        <ul class="feature-list">
+          <li>I'm a team player who likes sharing.</li>
+          <li>
+            I’m constantly on the way to be more creative.
+          </li>
+          <li>
+            I'm self-motivated and adaptable to change.
+          </li>
+        </ul>
+      </div>
+
+      <div class="feature-card what">
+        <h2>What I'm looking for</h2>
+        <ul class="feature-list">
+          <li>an opportunity to work with the great team</li>
+          <li>a playground to build useful & delightful things</li>
+        </ul>
+      </div>
+
+      <div class="feature-card facts">
+        <h2>Random Facts</h2>
+        <ul class="feature-list">
+          <li>I'm a globetrotter and movie-goer.</li>
+          <li>I'm a reader and writer.</li>
+          <li>I'm a cook and foodie.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact" id="contact">
+      <p class="display">Say hi.</p>
+      <div class="contact-left">
+        <div class="contact-info">
+          <p>(438)408-2488</p>
+          <a href="mailto:contact@jinggudesign.com" target="_blank"
+            >contact@jinggudesign.com</a
+          >
+        </div>
+        <div class="self-intro">
+          <p>
+            I'm a designer and a coder focusing on front-end. I do beautiful
+            designs and create dynamic experiences.
+          </p>
+          <p>My passion is to make every useful thing appealing.</p>
+          <p>
+            Drop me a line!
+          </p>
+          <p>Let's make something awesome together.</p>
+        </div>
+        <div class="signature">
+          <p>Jing Gu</p>
+          <p>Montréal, Canada</p>
+          <img src="images/decor/sign.svg" class="sign" alt="" />
+        </div>
+        <div class="social-media">
+          <a href="https://github.com/Jing-Gu?tab=repositories" target="_blank"
+            ><img src="images/media-icons/github.svg" alt=""
+          /></a>
+          <a href="https://dribbble.com/Jing_gu" target="_blank"
+            ><img src="images/media-icons/dribbble.svg" alt=""
+          /></a>
+          <a href="https://codepen.io/jing-gu" target="_blank"
+            ><img src="images/media-icons/codepen.svg" alt=""
+          /></a>
+          <a href="https://www.instagram.com/jing_u__/" target="_blank"
+            ><img src="images/media-icons/instagram.svg" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="contact-right" aria-label="profile"></div>
+      <a href="#home" class="btn-go-up"><span>&#8679;</span></a>
+    </section>
+
+    <footer>
+      <p class="copyright">&copy; 2020 Jing Gu</p>
+      <p class="footer-info">
+        About this site | This responsive portfolio site was coded by hand with
+        &#10084;
+      </p>
+    </footer>
+  </body>
+</html>
